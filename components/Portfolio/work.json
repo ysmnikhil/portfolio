@@ -1,0 +1,48 @@
+[   
+    {
+        "organization": "webmd",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH0iQx6u3kDbw/company-logo_100_100/0/1598382434823?e=1679529600&v=beta&t=yKWXxORMSXN2j1iEt1cE4WYCmXmQtAy7neXXX7a-vsA",
+        "duration": "April 2021- Present",
+        "location": "Mumbai Area, India",
+        "profiles": [
+            {
+                "title": "Technical Lead Engineer",
+                "duration": "April 2021- Present 1 yr 9 mos",
+                "description": "Managing the Univadis Professional Network of sites, to support millions of healthcare professionals worldwide: \n - Leading the team of 6 developers around the globe, including backend and frontend engineers \n - Development of products, APIs, Software solutions, Microservices\n - Development of PHP backend-based applications.\n - Release Management\n - Logs management\n - POC for the project, code review session, scrum meetings, sprint discussion and Jira tickets for developers.\n - Troubleshoot for program errors in existing application.\n - Involved in interviewing and recruiting new candidates for the team.\n - Conduct 1-1 with the team members to discuss the work and keep them motivated",
+                "skills": "LAMP, Front-End Development, Object-Oriented Programming (OOP), Git, Webpack, Docker, REST APIs, React.js, Vue.js, Elasticsearch, RabbitMQ, Redis, Varnish, Gitlab, PHP, MySQL, Symfony Framework, JavaScript"
+            }
+        ]
+    },
+    {
+        "organization": "aptushealth",
+        "duration": "June 2019 - April 2021",
+        "location": "Mumbai Area, India",
+        "profiles": [
+            {
+                "title": "Senior Software Engineer",
+                "duration": "Jun 2019 - Apr 2021 1 yr 11 mos",
+                "description": "As a SSE, my role involved the develop of the new functionality for the Univadis platform which requires the api communication, messenger, front end development with twig and ES6 along with the traditional Symfony development.",
+                "skills": "LAMP, Front-End Development, Object-Oriented Programming (OOP), Git, Doctrine (PHP), API Platform, PostgreSQL, Webpack, React.js, Vue.js, PHP, MySQL, Symfony Framework, Twig"
+            }
+        ]
+    },
+    {
+        "organization": "webkul",
+        "duration": "March 2013 - June 2019",
+        "location": "Noida",
+        "profiles": [
+            {
+                "title": "Lead Software Engineer",
+                "duration": "Apr 2016 - Jun 2019 3 yrs 3 mos",
+                "description": "As a Symfony team lead, my role was to lead the development of the SaaS based products which includes Uvdesk, Booking Commerce, Channel Manager.\nAs a Symfony team lead, my role was to lead the development of the SaaS based products which includes Uvdesk, Booking Commerce, Channel Manager.",
+                "skills": "LAMP, TypeScript, Front-End Development, Object-Oriented Programming (OOP), Git, Doctrine (PHP), PHP, MySQL, Symfony Framework"
+            },
+            {
+                "title": "Software Engineer",
+                "duration": "Mar 2013 - Apr 2016 3 yrs 2 mos",
+                "description": "Worked as Opencart developer and then lead, responsible for creating various extensions for the Opencart which includes Marketplace, Auction, RMA, Stripe Payment and many more.\nWorked as Opencart developer and then lead, responsible for creating various extensions for the Opencart which includes Marketplace, Auction, RMA, Stripe Payment and many more.",
+                "skills": "LAMP, TypeScript, Front-End Development, Object-Oriented Programming (OOP), PHP, MySQL, Opencart, JavaScript, HTML, Cascading Style Sheets (CSS)"
+            }
+        ]
+    }
+]
