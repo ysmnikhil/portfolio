@@ -14,7 +14,7 @@ interface Portfolio {
 
 export default function Portfolio() {
 
-  const profilePic = '/assets/images/me.jpeg'
+  const profilePic = 'assets/images/me.jpeg'
 
   let router = useRouter();
   let asPath = router.asPath.replace('/', '');

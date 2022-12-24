@@ -2,21 +2,21 @@
     {
         "title": "univadis",
         "organization": "webmd",
-        "banner": "/assets/images/univadis.jpeg",
+        "banner": "assets/images/univadis.jpeg",
         "website": "https://www.univadis.fr",
         "description": "At Univadis® we understand that the pressures of modern medicine are enormous and time with patients shrinks as doctors'​ responsibilities grow. We provide expertly curated medical news updates and education to help doctors keep up with research and trends in their specialty and improve their skills without taking time away from patients. \n \nExpertly-curated updates:\nWe trawl through the medical literature and digest the latest developments, so its easy to get to the important information instantly.\n\nFast learning: \nMedicine never stops progressing. But it’s often hard for practicing physicians to find the time to improve their skills. Univadis® makes learning quicker and more enjoyable through experts opinions, interactive patient cases, challenges and quizzes. \n\nBe the doctor you set out to be and Make The Most Of U with Univadis®\n\nExclusively for healthcare professionals, with more than 3 million members worldwide. \nUnivadis® is free, and always will be."
     },
     {
         "title": "Uvdesk",
         "organization": "webkul",
-        "banner": "/assets/images/uvdesk.png",
+        "banner": "assets/images/uvdesk.png",
         "website": "https://www.uvdesk.com",
         "description": "UVdesk is a customer support platform serving customers with its productive and qualitative services. It responds and impresses your customers that are not possible earlier.\n\nUVdesk is merely not a help desk tool but the fastest possible way to great customer service.\n\nMuch like the skill of UVdesk, the path to the excellence of customer service is an ongoing expedition comprising of the commodity(product) and customer support."
     },
     {
         "title": "BookingCommerce",
         "organization": "webkul",
-        "banner": "/assets/images/bookingcommerce.png",
+        "banner": "assets/images/bookingcommerce.png",
         "website": "https://www.bookingcommerce.com",
         "description": "Online Booking System For Everyone.\n\nBooking Commerce is SaaS-based Online booking and Appointment Scheduling software that ease your customer onboarding process and get your sales rolling. Now you can power your business using world's first online comprehensive platform for bookings."
     }
