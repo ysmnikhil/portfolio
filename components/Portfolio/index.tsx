@@ -90,7 +90,7 @@ export default function Portfolio() {
           {/* <!---About Me----> */}
           <section id="about-me" className={`py-40 px-14 transform transition hover:scale-[1.01] ${inActiveClass}`} data-selector="component">
             
-            <Image src={profilePic} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
+            <img src={profilePic} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
             <p className="text-2xl text-opacity-40 leading-relaxed" data-description="about me">
               Hello, I am Nikhil, making difficult digital projects for humans easy to use.
             </p>
@@ -116,7 +116,7 @@ export default function Portfolio() {
                 <div className="row-span-full md:col-span-1 md:text-right md:space-y-4">
                   <div className='space-y-1'>
                     {organization.logo &&
-                      <Image src={organization.logo} alt={organization.organization} width="50"  height="50" className='inline-block'/>
+                      <img src={organization.logo} alt={organization.organization} width="50"  height="50" className='inline-block'/>
                     }
                     <p className="text-xl text-violet-600 capitalize break-words">
                       {organization.organization}
@@ -173,7 +173,7 @@ export default function Portfolio() {
               <div className="mx-auto">
                 {last.banner && 
                   <div className="rounded-lg h-auto overflow-hidden">
-                    <Image alt="content" className="object-cover object-center w-full max-h-28 h-auto" 
+                    <img alt="content" className="object-cover object-center w-full max-h-28 h-auto" 
                     width="850" height="100" src={last.banner} />
                   </div>
                 }
@@ -212,7 +212,7 @@ export default function Portfolio() {
                   <div className="mx-auto">
                     {project.banner && 
                       <div className="rounded-lg h-auto overflow-hidden">
-                        <Image alt="content" className="object-cover object-center h-auto max-h-28 w-full overflow-hidden" 
+                        <img alt="content" className="object-cover object-center h-auto max-h-28 w-full overflow-hidden" 
                         width="850" height="100" src={project.banner} />
                       </div>
                     }
