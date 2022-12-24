@@ -7,11 +7,15 @@ import { sideBar, SidebarLink } from '../Sidebar/types'
 import isElementInViewport from '../../src/utils/isElementInViewport'
 import work from './work.json'
 import projects from './projects.json'
+
 interface Portfolio {
   name: string
 }
 
 export default function Portfolio() {
+
+  const profilePic = '/assets/images/me.jpeg'
+
   let router = useRouter();
   let asPath = router.asPath.replace('/', '');
   const [activeSection, setActiveSection] = useState('#');
@@ -86,7 +90,7 @@ export default function Portfolio() {
           {/* <!---About Me----> */}
           <section id="about-me" className={`py-40 px-14 transform transition hover:scale-[1.01] ${inActiveClass}`} data-selector="component">
             
-            <Image src={'https://media.licdn.com/dms/image/D4D35AQFcavXUvTX_dw/profile-framedphoto-shrink_200_200/0/1669967644063?e=1672232400&v=beta&t=bfbIPAY9go7pIa6FjsAraRyhLvaZqoQ3w6Ode-IVM3k'} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
+            <Image src={profilePic} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
             <p className="text-2xl text-opacity-40 leading-relaxed" data-description="about me">
               Hello, I am Nikhil, making difficult digital projects for humans easy to use.
             </p>
