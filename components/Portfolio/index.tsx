@@ -24,7 +24,7 @@ export default function Portfolio() {
 
   const activateSidebar = () => {
     const activeClass= ["bg-white"];
-    const sections = document.querySelectorAll(' [data-selector="component"]');
+    const sections = document.querySelectorAll('[data-selector="component"]');
 
     sections.forEach((section) => {
       section.classList.remove(...activeClass);
@@ -88,11 +88,11 @@ export default function Portfolio() {
             
             <Image src={'https://media.licdn.com/dms/image/D4D35AQFcavXUvTX_dw/profile-framedphoto-shrink_200_200/0/1669967644063?e=1672232400&v=beta&t=bfbIPAY9go7pIa6FjsAraRyhLvaZqoQ3w6Ode-IVM3k'} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
             <p className="text-2xl text-opacity-40 leading-relaxed" data-description="about me">
-              Hello, I'm Nikhil, making difficult digital projects for humans easy to use.
+              Hello, I am Nikhil, making difficult digital projects for humans easy to use.
             </p>
             <p className="py-8 pb-5 text-opacity-10 text-sm from-neutral-300" data-description="location">
-              <span className="">based In</span>
-              <a className="inline-block p-2 ml-2 border rounded-md shadow-sm cursor-pointer" href="https://www.google.com/maps?q=delhi%20india" target="_blank">
+              <span>based In</span>
+              <a className="inline-block p-2 ml-2 border rounded-md shadow-sm cursor-pointer" href="https://www.google.com/maps?q=delhi%20india" target="_blank" rel="noreferrer">
                 <MapPinIcon className="inline-block h-4 w-4 text-violet-600 mr-1"/>
                 Delhi, India
               </a>
@@ -178,7 +178,7 @@ export default function Portfolio() {
                     <p className="leading-relaxed mb-4 whitespace-pre-wrap">
                       {last.description}
                     </p>
-                    <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={last.website}>
+                    <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={last.website} rel="noreferrer">
                       {last.website}
                       <ArrowTopRightOnSquareIcon className="inline-block h-4 w-4 ml-1 hover:text-violet-600"/>
                     </a>
@@ -217,7 +217,7 @@ export default function Portfolio() {
                         <p className="leading-relaxed mb-4 whitespace-pre-wrap">
                           {project.description}
                         </p>
-                        <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={project.website}>
+                        <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={project.website} rel="noreferrer">
                           {project.website}
                           <ArrowTopRightOnSquareIcon className="inline-block h-4 w-4 ml-1 hover:text-violet-600"/>
                         </a>
@@ -231,7 +231,7 @@ export default function Portfolio() {
 
           {/* <!---Technologies----> */}
           <section id="technologies" className={`px-14 py-6 md:py-10 ${inActiveClass}`} data-selector="component">
-            
+
           </section>
 
         </div>

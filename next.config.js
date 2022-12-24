@@ -1,11 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  output: 'standalone',
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig   = {
   images: {
-    domains: ['media.licdn.com', 'www.uvdesk.com', 'www.bookingcommerce.com'],
+    loader: 'akamai',
+    path: '',
   },
-}
+  assetPrefix: './',
+};
 
-module.exports = nextConfig
+export default   nextConfig;
