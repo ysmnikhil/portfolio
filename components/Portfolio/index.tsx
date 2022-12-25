@@ -7,11 +7,15 @@ import { sideBar, SidebarLink } from '../Sidebar/types'
 import isElementInViewport from '../../src/utils/isElementInViewport'
 import work from './work.json'
 import projects from './projects.json'
+
 interface Portfolio {
   name: string
 }
 
 export default function Portfolio() {
+
+  const profilePic = 'assets/images/me.jpeg'
+
   let router = useRouter();
   let asPath = router.asPath.replace('/', '');
   const [activeSection, setActiveSection] = useState('#');
@@ -24,7 +28,7 @@ export default function Portfolio() {
 
   const activateSidebar = () => {
     const activeClass= ["bg-white"];
-    const sections = document.querySelectorAll(' [data-selector="component"]');
+    const sections = document.querySelectorAll('[data-selector="component"]');
 
     sections.forEach((section) => {
       section.classList.remove(...activeClass);
@@ -86,13 +90,13 @@ export default function Portfolio() {
           {/* <!---About Me----> */}
           <section id="about-me" className={`py-40 px-14 transform transition hover:scale-[1.01] ${inActiveClass}`} data-selector="component">
             
-            <Image src={'https://media.licdn.com/dms/image/D4D35AQFcavXUvTX_dw/profile-framedphoto-shrink_200_200/0/1669967644063?e=1672232400&v=beta&t=bfbIPAY9go7pIa6FjsAraRyhLvaZqoQ3w6Ode-IVM3k'} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
+            <img src={profilePic} alt="Nikhil Malik" width="150"  height="150" className="rounded-full ring-2 ring-green-200 m-auto mb-4"/>
             <p className="text-2xl text-opacity-40 leading-relaxed" data-description="about me">
-              Hello, I'm Nikhil, making difficult digital projects for humans easy to use.
+              Hello, I am Nikhil, making difficult digital projects for humans easy to use.
             </p>
             <p className="py-8 pb-5 text-opacity-10 text-sm from-neutral-300" data-description="location">
-              <span className="">based In</span>
-              <a className="inline-block p-2 ml-2 border rounded-md shadow-sm cursor-pointer" href="https://www.google.com/maps?q=delhi%20india" target="_blank">
+              <span>based In</span>
+              <a className="inline-block p-2 ml-2 border rounded-md shadow-sm cursor-pointer" href="https://www.google.com/maps?q=delhi%20india" target="_blank" rel="noreferrer">
                 <MapPinIcon className="inline-block h-4 w-4 text-violet-600 mr-1"/>
                 Delhi, India
               </a>
@@ -112,7 +116,7 @@ export default function Portfolio() {
                 <div className="row-span-full md:col-span-1 md:text-right md:space-y-4">
                   <div className='space-y-1'>
                     {organization.logo &&
-                      <Image src={organization.logo} alt={organization.organization} width="50"  height="50" className='inline-block'/>
+                      <img src={organization.logo} alt={organization.organization} width="50"  height="50" className='inline-block'/>
                     }
                     <p className="text-xl text-violet-600 capitalize break-words">
                       {organization.organization}
@@ -169,7 +173,7 @@ export default function Portfolio() {
               <div className="mx-auto">
                 {last.banner && 
                   <div className="rounded-lg h-auto overflow-hidden">
-                    <Image alt="content" className="object-cover object-center w-full max-h-28 h-auto" 
+                    <img alt="content" className="object-cover object-center w-full max-h-28 h-auto" 
                     width="850" height="100" src={last.banner} />
                   </div>
                 }
@@ -178,7 +182,7 @@ export default function Portfolio() {
                     <p className="leading-relaxed mb-4 whitespace-pre-wrap">
                       {last.description}
                     </p>
-                    <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={last.website}>
+                    <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={last.website} rel="noreferrer">
                       {last.website}
                       <ArrowTopRightOnSquareIcon className="inline-block h-4 w-4 ml-1 hover:text-violet-600"/>
                     </a>
@@ -208,7 +212,7 @@ export default function Portfolio() {
                   <div className="mx-auto">
                     {project.banner && 
                       <div className="rounded-lg h-auto overflow-hidden">
-                        <Image alt="content" className="object-cover object-center h-auto max-h-28 w-full overflow-hidden" 
+                        <img alt="content" className="object-cover object-center h-auto max-h-28 w-full overflow-hidden" 
                         width="850" height="100" src={project.banner} />
                       </div>
                     }
@@ -217,7 +221,7 @@ export default function Portfolio() {
                         <p className="leading-relaxed mb-4 whitespace-pre-wrap">
                           {project.description}
                         </p>
-                        <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={project.website}>
+                        <a className="text-indigo-500 inline-flex items-center cursor-pointer" target="_blank" href={project.website} rel="noreferrer">
                           {project.website}
                           <ArrowTopRightOnSquareIcon className="inline-block h-4 w-4 ml-1 hover:text-violet-600"/>
                         </a>
@@ -231,7 +235,7 @@ export default function Portfolio() {
 
           {/* <!---Technologies----> */}
           <section id="technologies" className={`px-14 py-6 md:py-10 ${inActiveClass}`} data-selector="component">
-            
+
           </section>
 
         </div>
