@@ -16,17 +16,11 @@ export default function Portfolio() {
   const profilePic = 'assets/images/me.jpeg'
 
   const router = useRouter();
-  console.log(router);
-  
-  let asPath = useRouter().asPath;
-  let [activeSection, setActiveSection] = useState('#about-us');
-
-  function setActiveSectionOuter(value: string) {
-    setActiveSection(value)
-  }
+  let asPath = router.asPath.replace('/', '');
+  const [activeSection, setActiveSection] = useState('#about-us');
 
   useEffect(() => {
-    // setActiveSection(asPath);
+    setActiveSection(asPath);
   }, [asPath]);
 
   const inActiveClass = ["opacity-100"];
@@ -246,7 +240,6 @@ export default function Portfolio() {
                           </div>
                         </div>
                       </a>
-
                     </div>
                   </div>
                 ))}
