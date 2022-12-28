@@ -2,7 +2,7 @@ export default function isElementInViewport (el) {
     const rect = el.getBoundingClientRect();
   
     const innerHeight = (window.innerHeight || document.documentElement.clientHeight);
-  
+    
     /*
     To work with small sections
     */
