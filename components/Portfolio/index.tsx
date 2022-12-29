@@ -6,6 +6,8 @@ import { sideBar, SidebarLink } from '../Sidebar/types'
 import isElementInViewport from '../../src/utils/isElementInViewport'
 import work from './work.json'
 import projects from './projects.json'
+import technologies from './technology.json'
+import contacts from './contact.json'
 
 interface Portfolio {
   name: string
@@ -61,8 +63,14 @@ export default function Portfolio() {
 
   const [lastProject, ...oneLessProjects] = projects;
 
-  const activeLabel = 'border-violet-600 border-r-2 rounded-r-md bg-violet-600 text-white hover:text-violet-100';
+  const activeLabel = 'border-violet-600 rounded-r-md bg-violet-600 text-white hover:text-violet-100';
   const activeIcon = 'text-white hover:text-violet-100';
+
+  const randomWidth = () => {
+    //postcss w-[40%] w-[45%] w-[50%] w-[55%] w-[60%] w-[65%] w-[70%] w-[75%] w-[80%] w-[85%] w-[90%] w-[95%] w-[100%]
+    const widthArray = [40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100];
+    return widthArray[Math.floor(Math.random() * widthArray.length)];
+  };
 
   return (
     <div className={`grid grid-flow-col grid-cols-12 bg-white pt-4 transition scroll-smooth`}>
@@ -70,13 +78,13 @@ export default function Portfolio() {
       <div className="col-span-3 hidden lg:block"></div>
       
       {/* <!---Sidebar----> */}
-      <div className="col-span-3 fixed left-0 top-0 bottom-0 pt-[10%] pr-[10%] space-y-4 z-10" aria-label="Global">
+      <div className="col-span-3 fixed left-0 top-0 bottom-0 pt-[10%] pr-[10%] z-10" aria-label="Global">
           {sideBar.map((item: SidebarLink) => {
             //https://github.com/facebook/react/issues/16132
             // const IconLazy = lazy(() => import(`@heroicons/react/20/solid/${item.component}.js`));
 
-            return <p className='text-xl' key={item.label}>
-              <a href={item.href} className={`pl-4 lg:pl-10 pr-2 py-2 font-medium ${activeSection == item.href ? activeLabel : 'hover:text-violet-600'}`}> 
+            return <p className={`h-[10%]`}> 
+            <a href={item.href} className={`inline-flex items-center text-xl h-full px-4 lg:pl-10 ${activeSection == item.href ? activeLabel : 'hover:text-violet-600'}`} key={item.label}>
               {/* onClick={() => setActiveSection(item.href)}> */}
                 {/* <Suspense> */}
                   {/* <IconLazy className={`inline-block lg:hidden h-4 w-4 mr-1 ${activeSection == item.href ? activeIcon : 'hover:text-violet-600'}`}/> */}
@@ -87,8 +95,8 @@ export default function Portfolio() {
                 <span className='lg:hidden'>
                   {item.label.substring(0, 1)}
                 </span>
-              </a>
-            </p>
+            </a>
+              </p>
           })}
       </div>
 
@@ -248,9 +256,83 @@ export default function Portfolio() {
           }
 
           {/* <!---Technologies----> */}
-          <section id="technologies" className={`px-14 lg:px-24 py-6 lg:py-10 min-h-screen flex flex-col align-middle justify-center ${inActiveClass}`} data-selector="component">
-
+          <section id="technologies" className={`px-14 md:px-24 py-6 lg:py-10 min-h-screen flex flex-col align-middle justify-center ${inActiveClass}`} data-selector="component">
+            <p className='lg:hidden text-2xl text-violet-800 mb-12'>
+              <span>
+                Technologies
+              </span>
+            </p>
+            <div className='grid grid-cols-1 gap-8 md:gap-16'>
+              {technologies.map((types) => (
+                  <div key={types['title']} className="flex flex-col relative">
+                    <p className='absolute -translate-y-5 w-full text-violet-200 text-2xl md:text-3xl uppercase text-center'>
+                      {types['title']}
+                    </p>
+                    <div key={types['title']} className="group grid grid-cols-2 grid-flow-dense">
+                      {types['values'].map((technology) => (
+                        <div key={technology.title} className="relative w-full h-36 md:h-48 border-slate-200 first:col-span-2 border-t border-l first:border-t-0">
+                          {technology.logo && 
+                            <div className='flex justify-center items-center w-10 h-10 md:w-16 md:h-16 rounded-full bg-violet-50 absolute -translate-y-5 -translate-x-5 md:-translate-y-8 md:-translate-x-8 bg-gradient-to-t from-rose-200 to-orange-200'>
+                              <img src={technology.logo} alt={technology.logo}  className='max-h-[50%] w-1/2'/>
+                            </div>
+                          }
+                          <div className='p-5 md:p-10'>
+                            <p className='capitalize text-xl md:text-2xl'>
+                              {technology.title}
+                            </p>
+                            <p className='mt-2 md:mt-4 text-sm md:text-base'>
+                              {technology.description}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+              ))}
+            </div>
           </section>
+
+          {/* <!---Bio----> */}
+          <section id="bio" className={`px-14 md:px-24 py-6 lg:py-10 min-h-screen flex flex-col align-middle justify-center ${inActiveClass}`} data-selector="component">
+            <p className='lg:hidden text-2xl text-violet-800 mb-4'>
+              <span>
+                Bio
+              </span>
+            </p>
+          </section>
+
+          {/* <!---Contact----> */}
+          <section id="contact" className={`px-14 md:px-24 py-6 lg:py-10 min-h-screen flex flex-col align-middle justify-center ${inActiveClass}`} data-selector="component">
+            <p className='lg:hidden text-2xl text-violet-800 mb-4'>
+              <span>
+                Contact
+              </span>
+            </p>
+
+            <div className='flex flex-col md:items-end' data-description="contact">
+            {contacts.map((contact) => (
+                <div className={`flex flex-row items-center h-16 md:h-20 w-[${randomWidth()}%]`}>
+                  {contact.logo &&
+                    <img src={contact.logo} alt={contact.title} className='w-5 h-5 mr-2'/>
+                  }
+                  <p className='pb-1 pr-3 border-b border-r rounded-br-lg whitespace-nowrap text-xl md:text-2xl hover:text-violet-600'>
+                    {contact.link &&
+                      <a href={contact.link} target="_blank">
+                        {contact.title}
+                      </a>
+                    }
+                    {!contact.link &&
+                      <span>
+                        {contact.value}
+                      </span>
+                    }
+                  </p>
+                  <span className='inline-block w-full border-b'></span>
+                </div>
+            ))}
+            </div>
+          </section>
+
 
         </div>
       </div>

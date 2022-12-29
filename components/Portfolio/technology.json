@@ -1,0 +1,147 @@
+[   
+    {
+        "title": "backend",
+        "values": [
+            {
+                "title": "PHP",
+                "logo": "assets/images/technology/icons/php.svg",
+                "description": "9+ Years of exprience with php"
+            },
+            {
+                "title": "symfony",
+                "logo": "assets/images/technology/icons/symfony.svg",
+                "description": "7+ Years of exprience with Symfony"
+            },
+            {
+                "title": "composer",
+                "logo": "assets/images/technology/icons/composer.svg",
+                "description": "9+ Years of exprience with composer"
+            },
+            {
+                "title": "laravel",
+                "logo": "assets/images/technology/icons/laravel.svg",
+                "description": "9+ Years of exprience with laravel"
+            },
+            {
+                "title": "opencart",
+                "logo": "assets/images/technology/icons/opencart.svg",
+                "description": "9+ Years of exprience with opencart"
+            },
+            {
+                "title": "mysql",
+                "logo": "assets/images/technology/icons/mysql.svg",
+                "description": "9+ Years of exprience with mysql"
+            },
+            {
+                "title": "elasticsearch",
+                "logo": "assets/images/technology/icons/elasticsearch.svg",
+                "description": "9+ Years of exprience with elasticsearch"
+            },
+            {
+                "title": "rabbitmq",
+                "logo": "assets/images/technology/icons/rabbitmq.svg",
+                "description": "9+ Years of exprience with rabbitmq"
+            },
+            {
+                "title": "redis",
+                "logo": "assets/images/technology/icons/redis.svg",
+                "description": "9+ Years of exprience with redis"
+            },
+            {
+                "title": "varnish",
+                "logo": "assets/images/technology/icons/varnish.svg",
+                "description": "9+ Years of exprience with varnish"
+            },
+            {
+                "title": "rest api",
+                "logo": "assets/images/technology/icons/rest-api.svg",
+                "description": "9+ Years of exprience with rest api"
+            },
+            {
+                "title": "docker",
+                "logo": "assets/images/technology/icons/docker.svg",
+                "description": "9+ Years of exprience with docker"
+            }
+        ]
+    },
+    {
+        "title": "frontend",
+        "values": [
+            {
+                "title": "html",
+                "logo": "assets/images/technology/icons/html.svg",
+                "description": "9+ Years of exprience with html"
+            },
+            {
+                "title": "js",
+                "logo": "assets/images/technology/icons/js.svg",
+                "description": "9+ Years of exprience with js"
+            },
+            {
+                "title": "CSS",
+                "logo": "assets/images/technology/icons/css.svg",
+                "description": "9+ Years of exprience with css"
+            },
+            {
+                "title": "tailwindcss",
+                "logo": "assets/images/technology/icons/tailwindcss.svg",
+                "description": "9+ Years of exprience with tailwindcss"
+            },
+            {
+                "title": "vue",
+                "logo": "assets/images/technology/icons/vue.svg",
+                "description": "9+ Years of exprience with vue"
+            },
+            {
+                "title": "react",
+                "logo": "assets/images/technology/icons/react.svg",
+                "description": "9+ Years of exprience with react"
+            },
+            {
+                "title": "next js",
+                "logo": "assets/images/technology/icons/next-js.svg",
+                "description": "9+ Years of exprience with next-js"
+            },
+            {
+                "title": "typescript",
+                "logo": "assets/images/technology/icons/typescript.svg",
+                "description": "9+ Years of exprience with typescript"
+            },
+            {
+                "title": "webpack",
+                "logo": "assets/images/technology/icons/webpack.svg",
+                "description": "9+ Years of exprience with webpack"
+            },
+            {
+                "title": "NPM",
+                "logo": "assets/images/technology/icons/npm.svg",
+                "description": "9+ Years of exprience with npm"
+            }
+        ]
+    },
+    {
+        "title": "tools",
+        "values": [
+            {
+                "title": "gitlab",
+                "logo": "assets/images/technology/icons/gitlab.svg",
+                "description": "9+ Years of exprience with gitlab"
+            },
+            {
+                "title": "postman",
+                "logo": "assets/images/technology/icons/postman.svg",
+                "description": "9+ Years of exprience with postman"
+            },
+            {
+                "title": "jira",
+                "logo": "assets/images/technology/icons/jira.svg",
+                "description": "9+ Years of exprience with jira"
+            },
+            {
+                "title": "phpstorm",
+                "logo": "assets/images/technology/icons/phpstorm.svg",
+                "description": "9+ Years of exprience with phpstorm"
+            }
+        ]
+    }
+]
