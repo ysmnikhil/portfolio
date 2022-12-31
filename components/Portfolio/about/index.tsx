@@ -1,6 +1,8 @@
 import { MapPinIcon } from '@heroicons/react/24/solid'
+import { FC } from 'react'
+import Props from '../../types/inActiveClass'
 
-export const AboutMe = ({ inActiveClass }) => {
+export const AboutMe: FC<Props> = ({ inActiveClass }) : JSX.Element => {
 
   const profilePic = 'assets/images/me.jpeg'
 

@@ -1,9 +1,10 @@
+import { FC } from 'react'
+import Props from '../../types/inActiveClass'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
 import projects from '../../../public/assets/json/projects.json'
 
-export const LastProject = ({ inActiveClass }) => {
-
+export const LastProject: FC<Props> = ({ inActiveClass }) : JSX.Element => {
   const [lastProject, ...oneLessProjects] = projects;
 
   return (

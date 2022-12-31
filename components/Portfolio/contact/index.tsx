@@ -1,6 +1,8 @@
+import { FC } from 'react'
+import Props from '../../types/inActiveClass'
 import contacts from '../../../public/assets/json/contact.json'
 
-export const Contact = ({ inActiveClass }) => {
+export const Contact: FC<Props> = ({ inActiveClass }) : JSX.Element => {
 
   const randomWidth = () => {
     //postcss w-[40%] w-[45%] w-[50%] w-[55%] w-[60%] w-[65%] w-[70%] w-[75%] w-[80%] w-[85%] w-[90%] w-[95%] w-[100%]
@@ -24,7 +26,7 @@ export const Contact = ({ inActiveClass }) => {
             }
             <p className='pb-1 pr-3 border-b border-r rounded-br-lg whitespace-nowrap text-xl md:text-2xl hover:text-violet-600'>
               {contact.link &&
-                <a href={contact.link} target="_blank">
+                <a href={contact.link} target="_blank" rel="noreferrer">
                   {contact.title}
                 </a>
               }

@@ -6,9 +6,10 @@ import { Projects } from './projects'
 import { Technology } from './technology'
 import { Bio } from './bio'
 import { Contact } from './contact'
+import { inActiveClass } from '../types/inActiveClass'
 
 export default function Portfolio() {
-  const inActiveClass = ['opacity-60']
+  const inActiveClass:inActiveClass = ['opacity-60']
   return (
     <div className={`grid grid-flow-col grid-cols-12 bg-white pt-4 transition scroll-smooth`}>
 
