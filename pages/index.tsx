@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { NextPage } from 'next'
-import { Sidebar } from '../components/Sidebar'
 import Portfolio from '../components/Portfolio'
 
 const PorfolioPage: NextPage = () => {
@@ -14,7 +12,6 @@ const PorfolioPage: NextPage = () => {
       </Head>
 
       <main className="container m-auto">
-        <Sidebar/>
         <Portfolio/>
       </main>
 

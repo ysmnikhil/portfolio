@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.default-svg {
+    filter: invert(0%) sepia(0%) saturate(7474%) hue-rotate(201deg) brightness(105%) contrast(106%);
+}
+.hover\:hover-svg:hover {
+    filter: invert(15%) sepia(73%) saturate(4358%) hue-rotate(261deg) brightness(86%) contrast(98%);
+}
+.active-svg img {
+    filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(106%);
+}

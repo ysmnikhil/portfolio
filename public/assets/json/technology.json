@@ -73,11 +73,6 @@
                 "description": "9+ Years of exprience with html"
             },
             {
-                "title": "js",
-                "logo": "assets/images/technology/icons/js.svg",
-                "description": "9+ Years of exprience with js"
-            },
-            {
                 "title": "CSS",
                 "logo": "assets/images/technology/icons/css.svg",
                 "description": "9+ Years of exprience with css"
@@ -86,6 +81,11 @@
                 "title": "tailwindcss",
                 "logo": "assets/images/technology/icons/tailwindcss.svg",
                 "description": "9+ Years of exprience with tailwindcss"
+            },
+            {
+                "title": "Javascript",
+                "logo": "assets/images/technology/icons/js.svg",
+                "description": "9+ Years of exprience with js"
             },
             {
                 "title": "vue",
