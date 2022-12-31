@@ -1,6 +1,8 @@
+import { FC } from 'react'
+import Props from '../../types/inActiveClass'
 import work from '../../../public/assets/json/work.json'
 
-export const Work = ({ inActiveClass }) => {
+export const Work: FC<Props> = ({ inActiveClass }) : JSX.Element => {
 
   return (
     <section id="work" className={`px-14 md:px-24 py-6 lg:py-10 min-h-screen flex flex-col align-middle justify-center ${inActiveClass}`} data-selector="component">

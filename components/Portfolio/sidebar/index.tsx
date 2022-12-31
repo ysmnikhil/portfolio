@@ -1,14 +1,17 @@
+import { FC } from 'react'
 import { useEffect, useState, Suspense, lazy } from 'react'
 import { useRouter } from 'next/router'
-import { sideBar, SidebarLink } from './types'
 import isElementInViewport from '../../../src/utils/isElementInViewport'
 import Link from 'next/link';
+import Props from '../../types/inActiveClass'
+import { SidebarLink } from '../../types/sideBar'
+import SidebarLinks from '../../../public/assets/json/sidebar.json'
 
-export const Sidebar = ({ inActiveClass }) => {
+export const Sidebar: FC<Props> = ({ inActiveClass }) : JSX.Element => {
 
   const router = useRouter();
   const prefixInCaseOfHash = '/'; //'#'
-  var nIntervId;
+  var nIntervId: number;
 
   let asPath = router.asPath.replace('/', '');
   const [activeSection, setActiveSection] = useState('/about-us');
@@ -29,7 +32,7 @@ export const Sidebar = ({ inActiveClass }) => {
 
   const activateSidebarWithDelay = () => {
     if (!nIntervId) {
-      nIntervId = setInterval(activateSidebar, 200);
+      nIntervId = window.setInterval(activateSidebar, 200);
     }
   }
 
@@ -57,7 +60,7 @@ export const Sidebar = ({ inActiveClass }) => {
     }
 
     clearInterval(nIntervId);
-    nIntervId = null;
+    nIntervId = 0;
   }
 
   useEffect(() => {
@@ -75,7 +78,7 @@ export const Sidebar = ({ inActiveClass }) => {
       
       {/* <!---Sidebar----> */}
       <div className="col-span-3 fixed left-0 top-0 bottom-0 pt-[10%] pr-[10%] z-10" aria-label="Global">
-          {sideBar.map((item: SidebarLink) => {
+          {SidebarLinks.map((item: SidebarLink) => {
             //https://github.com/facebook/react/issues/16132
             // const IconLazy = lazy(() => import(`@heroicons/react/20/solid/${item.component}.js`));
 
