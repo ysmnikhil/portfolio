@@ -1,0 +1,27 @@
+[   
+    {
+        "title": "ysmnikhil.com",
+        "logo": "assets/images/contact/web.svg",
+        "link": "https://ysmnikhil.com"
+    },
+    {
+        "title": "nikhilexam@gmail.com",
+        "logo": "assets/images/contact/mail.svg",
+        "link": "mailto:nikhilexam@gmail.com"
+    },
+    {
+        "title": "github",
+        "logo": "assets/images/contact/github.svg",
+        "link": "https://github.com/ysmnikhil"
+    },
+    {
+        "title": "twitter",
+        "logo": "assets/images/contact/twitter.svg",
+        "link": "https://twitter.com/ysmnikhil"
+    },
+    {
+        "title": "address",
+        "logo": "assets/images/contact/location.svg",
+        "value": "Noida, India"
+    }
+]
