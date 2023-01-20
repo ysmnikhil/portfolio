@@ -16,18 +16,6 @@ export const Sidebar: FC<Props> = ({ inActiveClass }) : JSX.Element => {
   let asPath = router.asPath.replace('/', '');
   const [activeSection, setActiveSection] = useState('/about-us');
 
-  useEffect(() => {
-    // setActiveSection(prefixInCaseOfHash + asPath);
-    const element = document.getElementById(asPath);
-    if (element) {
-      // element.scrollIntoView();
-      window.scrollTo({ 
-        top: element.offsetTop, 
-        behavior: 'smooth'
-      });
-    }
-  }, [asPath]);
-
   const activeLabel = 'border-violet-600 rounded-r-md bg-violet-600 text-white hover:text-violet-100 active-svg';
 
   const activateSidebarWithDelay = () => {
@@ -71,6 +59,18 @@ export const Sidebar: FC<Props> = ({ inActiveClass }) : JSX.Element => {
       window.addEventListener('scroll', activateSidebarWithDelay);
     }
   }, []);
+
+  useEffect(() => {
+    // setActiveSection(prefixInCaseOfHash + asPath);
+    const element = document.getElementById(asPath);
+    if (element) {
+      // element.scrollIntoView();
+      window.scrollTo({ 
+        top: element.offsetTop, 
+        behavior: 'smooth'
+      });
+    }
+  }, [asPath]);
 
   return (
     <>
