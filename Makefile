@@ -10,4 +10,4 @@ run:
 	docker run -p 3000:3000 nextjs-blog
 
 start:
-	docker start
+	build run
